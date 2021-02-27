@@ -70,7 +70,11 @@ LOCATION = {
     }
 
 LOC = []
+ipv4s = Testsettin.second_set[randint(0,9)]
+check =f'http://api.ipstack.com/{ipv4s}?access_key=0a8' \
+       f'52ba9654d6cfb4fd024654e6847e0'
 
+DATA = requests.get(check)
 
 class Geolocation(Resource):
 
